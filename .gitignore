@@ -1,0 +1,45 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# ASP.NET Core
+appsettings.*.json
+*.db
+*.log
+
+# MongoDB
+*.lock
+*.pid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dotnet tool files
+*.dotCover
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Publish output
+publish/
