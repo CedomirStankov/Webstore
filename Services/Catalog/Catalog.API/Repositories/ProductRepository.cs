@@ -24,7 +24,7 @@ namespace Catalog.API.Repositories
             return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
         }
 
-        public async Task<Product> GetProduct(string id)
+        public async Task<Product> GetProductById(string id)
         {
             return await _context.Products.Find(p=> p.Id == id).FirstOrDefaultAsync();
         }

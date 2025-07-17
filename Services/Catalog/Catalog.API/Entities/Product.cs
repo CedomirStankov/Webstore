@@ -1,8 +1,12 @@
-﻿namespace Catalog.API.Entities
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+
+namespace Catalog.API.Entities
 {
     public class Product
     {
-        public string Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
         public string Summary { get; set; }

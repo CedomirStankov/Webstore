@@ -10,7 +10,7 @@ namespace Catalog.API.Data
             var existProducts = productCollection.Find(p => true).Any();
             if (!existProducts)
             {
-                productCollection.InsertManyAsync(GetPreconfiguredProducts());
+                productCollection.InsertMany(GetPreconfiguredProducts());
             }
         }
 
@@ -20,7 +20,7 @@ namespace Catalog.API.Data
             {
                 new Product()
                 {
-                    Id = "1",
+                    Id = "64df0a7bde2f3c8a14f98101",
                     Name = "Wireless Mouse",
                     Category = "Electronics",
                     Summary = "Ergonomic wireless mouse",
@@ -30,7 +30,7 @@ namespace Catalog.API.Data
                 },
                 new Product()
                 {
-                    Id = "2",
+                    Id = "5f4e2b9a1c9d440e8c7f3a2b",
                     Name = "Mechanical Keyboard",
                     Category = "Electronics",
                     Summary = "RGB mechanical keyboard",
@@ -40,7 +40,7 @@ namespace Catalog.API.Data
                 },
                 new Product()
                 {
-                    Id = "3",
+                    Id = "60b7d3e4a1c2f0b23d9e4c56",
                     Name = "USB-C Hub",
                     Category = "Accessories",
                     Summary = "6-in-1 USB-C hub",
@@ -50,7 +50,7 @@ namespace Catalog.API.Data
                 },
                 new Product()
                 {
-                    Id = "4",
+                    Id = "63c81a2f0b5d4e7f1a2c3d4e",
                     Name = "Gaming Monitor",
                     Category = "Electronics",
                     Summary = "27-inch 144Hz gaming monitor",
@@ -60,7 +60,7 @@ namespace Catalog.API.Data
                 },
                 new Product()
                 {
-                    Id = "5",
+                    Id = "507f1f77bcf86cd799439011",
                     Name = "Bluetooth Speaker",
                     Category = "Audio",
                     Summary = "Portable Bluetooth speaker",
@@ -70,7 +70,7 @@ namespace Catalog.API.Data
                 },
                 new Product()
                 {
-                    Id = "6",
+                    Id = "62e3a5b1f0c1234d56789abc",
                     Name = "External SSD 1TB",
                     Category = "Storage",
                     Summary = "1TB portable SSD drive",
