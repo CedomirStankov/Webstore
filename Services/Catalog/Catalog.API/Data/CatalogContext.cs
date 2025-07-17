@@ -7,7 +7,7 @@ namespace Catalog.API.Data
     {
         public CatalogContext()
         {
-            var client = new MongoClient("mongodb://localhost:27017");
+            var client = new MongoClient("mongodb://catalogdb:27017");
             var database = client.GetDatabase("CatalogDB");
 
             Products = database.GetCollection<Product>("Products");
