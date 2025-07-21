@@ -5,7 +5,7 @@ namespace Catalog.API.Entities
 {
     public class Product
     {
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonRepresentation(BsonType.ObjectId)] //iako je ovde id string, u bazi ga tretiraj kao ObjectId
         public string? Id { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
